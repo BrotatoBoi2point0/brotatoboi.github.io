@@ -3,19 +3,19 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" href="./style.css"/>
+        <script type="text/javascript" src="./script.js"></script>
     </head>
-    <body>
-        <!-- Now add styling and whatnot! -->
+    <body onload="site_load()">
         <h1>Welcome</h1>
         
         <div id="navBtns">
-            <button>Home</button>
-            <button>Games</button>
-            <button>Tutorials</button>
-            <button>Other</button>
+            <button onclick="change_frame('home')">Home</button>
+            <button onclick="change_frame('games')">Games</button>
+            <button onclick="change_frame('tutorials')">Tutorials</button>
+            <button onclick="change_frame('other')">Other</button>
         </div>
 
-        <iframe src="./home.html" height="100%">
+        <iframe id="mainframe">
     </body>
     <footer>
         2024.04.23V1.0.0@BrotatoBoi
